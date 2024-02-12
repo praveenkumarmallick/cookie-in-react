@@ -8,7 +8,7 @@ const App = () => {
   const [cookie, setCookie] = useCookies(["user"]);
 
   const handleLogin = (user) => {
-    setCookie("user", user, { path: "/" });
+    setCookie("user", user, { path: "/", expires: "1h" });
   };
 
   return (
